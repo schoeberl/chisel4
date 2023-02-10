@@ -25,5 +25,6 @@ class Add extends Module {
 
 object AddMain extends App {
   println("Generating the adder hardware")
-  emitVerilog(new Add(), Array("--target-dir", "generated"))
+  println(getVerilogString(new Add))
+  // emitVerilog(new Add(), Array("--target-dir", "generated"))
 }
